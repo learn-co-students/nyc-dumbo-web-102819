@@ -1,5 +1,6 @@
  
 # Take a look at docs for: 
+  * `#map`
   * `#select`
   * `#find`
 

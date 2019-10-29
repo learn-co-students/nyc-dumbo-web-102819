@@ -3,26 +3,31 @@
 ## How to lectures
 + Participation
 + Recording
++ Where tf is the lecture code?
 + Breaks
 + Question-asking hours
 + Should I code along?
-+ Where tf is the lecture code?
 + Falling asleep
 
-## SWBATS
-
-* Distinguish between data types in Ruby
-* Show how to look up documentation for data types in Ruby
-* Demonstrate the use of common Array methods
+## Key Questions
+* How can I use an experimental, incremental process to write better code, faster?
+  * What is pry and how can it help me with this process?
+* How can I distinguish between data types in Ruby, and why might I want to?
+* How can I look up documentation for data types in Ruby? 
+  * Should I memorize everything in the documentation?
+* How can I use these common Array methods:
   * `#each`
   * `#map`
   * `#select`
   * `#find`
-* Differentiate array methods by their respective return values
-* Define the Single Responsibility Principle
-* Employ test-driven development best practices in labs
-  * `rspec --fail-fast` handle one error at a time
-  * Red, Green, Refactor
+* How can I differentiate array methods by their respective return values?
+  * What about the return value of the block? 
+      * What's the difference between the return value of the block 
+        and the return value of the method?
+* What is the Single Responsibility Principle and how can it help me write better code?
+* How can I employ test-driven development best practices in labs?
+  * How can I use `rspec --fail-fast` to handle one error at a time?
+  * What is the Red, Green, Refactor process and how can I implement it?
   * Make it work (shameless green), make it right, make it fast
 
 ---
