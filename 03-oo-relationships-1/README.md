@@ -72,6 +72,4 @@ The class should have these methods:
   - [x] `Tweet#message` returns a string
   - [x] `Tweet#user` returns an instance of the user class
   - [x] `Tweet.all` returns all the Tweets created.
-  
-  
-  - [ ] `Tweet#username` returns the username of the tweet's user
+  - [x] `Tweet#username` returns the username of the tweet's user

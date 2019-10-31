@@ -14,4 +14,8 @@ class Tweet
     @@all
   end
 
+  def username
+    self.user.username
+  end
+
 end # end of Tweet class
