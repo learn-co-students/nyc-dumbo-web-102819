@@ -3,7 +3,7 @@ Object Oriented Relationships
 
 ## One to Many Relationships
 
-### SWBATs
+### Student Will Be Able To s
 
 * Implement one object to many objects relationship
   * One object _has many_ objects
@@ -19,7 +19,11 @@ Object Oriented Relationships
   * we created instances of classes using `initialize`
   * we created instance and class methods
   * we used `attr_` macros for getters and setters
+    attr_reader - getter, retrieve data
+    attr_writer - setter, set data
+    attr_accessor - getter/setter, combine the two
   * we looked at `self`
+
 * Learn about object oriented relationships driven via _deliverables_!
   * Define terminology, understand the importance of using clear language in programming
     * Pair programming! Technical interviews!
@@ -32,9 +36,15 @@ Object Oriented Relationships
 What do the following mean in plain English? What do they mean in programming?
 
 * Model
+  - representation of something
+  - blueprint of what an object looks like, what data and behavior it should have
+  - class -> data, behavior
 * Domain
-  * Show examples of websites and their domains
+  - browser, domain name in a brower
+  - YouTube -> videos, comment, subscriptions
+  - Google -> search
 * Domain modeling
+  - Youtube, a comment _belongs to_ a video, video _has many_ comments
 * Relationships
   * One to many relationship
   * Many to many relationship
@@ -51,12 +61,17 @@ _Why do we care so much about codifying and being really specific about the term
 
 ### Deliverables
 
-- [ ] Create a User class. The class should have these methods:
-  - [ ] `User#initialize` takes a username and has a reader method for the username
+- [x] Create a User class. 
+The class should have these methods:
+  - [x] `User#initialize` takes a username 
+    - [x] has a reader method for the username
   - [ ] `User#tweets` returns an array of Tweet instances
   - [ ] `User#post_tweet` takes a message, creates a new tweet, and adds it to the user's tweet collection
-- [ ] Create a Tweet class. The class should have these methods:
-  - [ ] `Tweet#message` returns a string
-  - [ ] `Tweet#user` returns an instance of the user class
-  - [ ] `Tweet.all` returns all the Tweets created.
+- [x] Create a Tweet class. 
+The class should have these methods:
+  - [x] `Tweet#message` returns a string
+  - [x] `Tweet#user` returns an instance of the user class
+  - [x] `Tweet.all` returns all the Tweets created.
+  
+  
   - [ ] `Tweet#username` returns the username of the tweet's user
