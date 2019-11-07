@@ -1,5 +1,7 @@
 require 'bundler'
 # this will require all the gems in our Gemfile
+# require 'sqlite3'
+# require 'pry'
 Bundler.require
 
 # set up our database connection, save to a constant so we can access throughout the application

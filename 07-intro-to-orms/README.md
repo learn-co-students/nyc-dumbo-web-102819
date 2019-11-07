@@ -23,11 +23,16 @@ Intro to ORMs
 ## Object Relational Mapper (ORM) Questions
 
 * What is an ORM?
+  - Object, instance of a class (Plain Ol' Ruby Object)
+  - Relational, database! and how different tables relate
+  - Mapper, a way to communicate between those two things
 * How do the following SQL concepts translate to Ruby?
-  * table -> 
-  * row -> 
-  * column -> 
+  * table -> class
+  * row -> instance
+  * column -> method, attribute
 * What is the advantage of using an ORM? What are some drawbacks?
+  - persistence
+  - interface to ask questions about our data
 
 ### Metaprogramming (Mass Assignment)
 Is the concept of writing code that writes code. In ruby, everything is an object. We interact with objects by *sending messages* to them. Objects know which messages to respond to and how via the *methods* that we define in the class.
