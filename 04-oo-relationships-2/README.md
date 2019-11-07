@@ -24,8 +24,8 @@ Object Oriented Relationships
 The class should have these methods:
   - [x] `User#initialize` takes a username 
     - [x] has a reader method for the username
-  - [ ] `User#tweets` returns an array of Tweet instances
-  - [ ] `User#post_tweet` takes a message, creates a new tweet, and adds it to the user's tweet collection
+  - [x] `User#tweets` returns an array of Tweet instances
+  - [x] `User#post_tweet` takes a message, creates a new tweet, and adds it to the user's tweet collection
 - [x] Create a Tweet class. 
 The class should have these methods:
   - [x] `Tweet#message` returns a string

@@ -3,13 +3,14 @@ class Tweet
 
   @@all = []
 
+  # message => string, user => user instance
   def initialize(message, user)
     @message = message
     @user = user
-
+    
     @@all << self
   end
-
+  
   def self.all
     @@all
   end
