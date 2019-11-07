@@ -89,6 +89,12 @@ WHERE name = "Black Sabbath";
 
 5. Write the SQL to display an artist's name next to their album title
 
+```sql
+SELECT artists.name, albums.title
+FROM artists
+JOIN albums 
+ON albums.artist_id = artists.id
+```
 
 
 6. *bonus* Write the SQL to display artist name, album name and number of tracks on that album

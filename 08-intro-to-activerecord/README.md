@@ -5,17 +5,30 @@ Intro to ActiveRecord
 - [ ] Describe how gems work and the value of shared code
 - [ ] Implement ActiveRecord in their projects
 - [ ] Practice creating migrations for updating the database structure
-- [ ] Explain how rake works and how to run rake tasks
+- [ ] Explain how `rake` works and how to run rake tasks
 - [ ] Distinguish between and define "model", "class", and "table"
 - [ ] Practice with ActiveRecord::Base instance and class methods
 - [ ] Perform persistent CRUD actions on one model using ActiveRecord
 
 ### Outline
-* Demonstrate Mass Assignment (if not covered in SQL/ORM lecture)
+* Demonstrate Mass Assignment
+* Review project setup
 * Show how to use `rake` tasks
 * Choose a domain and set up ActiveRecord on our models (Actors and Movies?)
   * Demonstrate how to work with migration files: `migrate` and `rollback`
   * Write CRUD on a model using ActiveRecord
+
+video_games
+- title
+- genre
+- publisher
+- rating
+
+players
+- name
+- age
+- console
+
 
 ### Metaprogramming and Mass Assignment
 Is the concept of writing code that writes code. In ruby, everything is an object. We interact with objects by *sending messages* to them. Objects know which messages to respond to and how via the *methods* that we define in the class.
@@ -34,6 +47,35 @@ end
 ### ActiveRecord
 
 * What are the steps for setting up ActiveRecord on a model?
+
+0. Setup the connection to the database
+  - config/environment.rb
+
+1. Create migration
+  - create a file (using `rake db:migrate`)
+
+2. Write our migration
+  - write the code for the migration in that file
+  ```rb
+    create_table :games do |t|
+      t.string(:title)
+      t.string :genre
+      t.string :publisher
+      t.integer :rating
+
+      t.timestamps
+      # created_at, updated_at
+    end
+  ```
+3. Run our migration
+`rake db:migrate`
+
+3.5. test/check your migration
+`rake db:migrate:status` (or look at your schema)
+
+4. Connect tables to Ruby classes
+  - use table naming conventions
+
 
 * How can we do CRUD actions using ActiveRecord?
 

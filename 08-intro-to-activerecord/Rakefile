@@ -1,5 +1,5 @@
 require_relative './config/environment'
-# require 'sinatra/activerecord/rake'
+require 'sinatra/activerecord/rake'
 
 desc "Start our app console"
 task :console do
@@ -7,4 +7,9 @@ task :console do
   ActiveRecord::Base.logger = Logger.new(STDOUT)
   # open Pry console, similar to binding.pry
   Pry.start
+end
+
+desc "Print 100 cowboys"
+task :cowboy_printer do
+  puts "🤠" * 100
 end

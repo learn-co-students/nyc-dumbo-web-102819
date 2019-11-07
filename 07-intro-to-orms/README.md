@@ -34,7 +34,7 @@ Intro to ORMs
   - persistence
   - interface to ask questions about our data
 
-### Metaprogramming (Mass Assignment)
+### Metaprogramming and Mass Assignment
 Is the concept of writing code that writes code. In ruby, everything is an object. We interact with objects by *sending messages* to them. Objects know which messages to respond to and how via the *methods* that we define in the class.
 
 Therefore, when initializing an object in ruby, we can pass in a hash, and then iterate over the hash to Mass Assign attributes to the instance that we are creating.
