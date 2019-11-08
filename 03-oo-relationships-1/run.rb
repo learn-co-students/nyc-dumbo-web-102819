@@ -2,12 +2,12 @@ require 'pry'
 require_relative 'models/user'
 require_relative 'models/tweet'
 
-user = User.new("coffee_dad")
+coffee_dad = User.new("coffee_dad")
 
-t1 = Tweet.new("coffee coffee", user)
-t2 = Tweet.new("mmm coffee", user)
-t3 = Tweet.new("having #a coffee", user)
-t4 = Tweet.new("ok", user)
+t1 = coffee_dad.post_tweet("coffee coffee")
+t2 = coffee_dad.post_tweet("mmm coffee")
+t3 = coffee_dad.post_tweet("having #a coffee")
+t4 = coffee_dad.post_tweet("ok")
 
 binding.pry
 0
