@@ -21,6 +21,15 @@ Active Record Associations
   * How can we use ActiveRecord to write SQL to find associations?
   * What do `has_many` and `belongs_to` do for us?
 
+### Active Record Setup Checklist
+
+0. Setup the connection to the database
+1. Create migration file
+2. Write the migration code
+3. Run the migration and check the schema/status
+4. Create the Ruby class to connect to the table
+5. Test the Ruby class in `rake console`
+
 ### Example App
 
 Let's make a movie app for tracking actors and their roles in different films. For our domain, we'll need a many-to-many relationship between actors and films, where an actor has many films through roles and a film has many actors through roles. Roles will be the join between actors and films, so our roles table will need foreign keys for the movie_id and actor_id.
