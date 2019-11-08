@@ -1,3 +1,6 @@
+Player.destroy_all
+Game.destroy_all
+
 # seed file will run Ruby code, we use this to populate our database
 students = [ 
   "Bihelca", "Conrad", "Dominic", "Eric", "FanZhong", "Frankie",
@@ -11,4 +14,9 @@ consoles = [ "Switch", "PS4", "XBox", "PC" ]
 students.each do |student|
   # .sample picks a random item from an array
   Player.create(name: student, console: consoles.sample, age: rand(1..100))
+end
+
+# TODO: add Faker
+20.times do
+  Game.create(title: Faker::Game.title, genre: Faker::Game.genre)
 end
