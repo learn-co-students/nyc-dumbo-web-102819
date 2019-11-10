@@ -1,7 +1,3 @@
 class BookApp
-  def run
-    puts "hi"
-    foo = gets.chomp
-    p foo
-  end
+  # TODO: make a CLI
 end
