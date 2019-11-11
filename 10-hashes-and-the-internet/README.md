@@ -1,5 +1,6 @@
 ## SWBATs
 
+* [ ] Practice writing a command line application (CLI)
 * [ ] Recognize the parts of the request-response lifecycle
     * [ ] Define client and describe setting up the request
     * [ ] Define server and describe how the response is formatted
@@ -8,16 +9,14 @@
 * [ ] Define Application Programming Interface (API)
     * [ ] Explain the uses of an API on the internet
 * [ ] Practice making requests to an API and parsing and examining the result
-* [ ] Practice writing a command line application (CLI)
 
 ## Outline
 - Discuss user stories for our app
   - As a user, I can search the Google API and save books to my library
   - As a user, I can view a list of my saved books
 - Review ActiveRecord/project setup
-- Implement search using Google API
-*If there's time*
 - Build welcome message and user login
+- Implement search using Google API
 - Save search results to database
 - Display saved books
 
