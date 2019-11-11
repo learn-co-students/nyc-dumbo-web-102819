@@ -1,3 +1,5 @@
 class UserBook < ActiveRecord::Base
-  # TODO: association methods
+  belongs_to :user
+  belongs_to :book
+  
 end

@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  # TODO: association methods
+  has_many :user_books
+  has_many :books, through: :user_books
 end
