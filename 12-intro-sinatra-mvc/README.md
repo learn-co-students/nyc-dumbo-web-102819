@@ -21,6 +21,11 @@ Intro to Sinatra & MVC
 - [ ] How CRUD actions map to RESTful Routing
 - [ ] How Sinatra serves up data in response to web requests
 
+App Ideas
+- Rat Trackr - Rat
+- Flatiron Help - Student info, complaint info
+- Restaurants
+
 ## Important Definitions
 
 ### Review
@@ -34,14 +39,24 @@ Intro to Sinatra & MVC
 ### New!
 
 - *MVC*: 
-  - Model =>
-  - View =>
-  - Controller =>
+  - Model => Ruby class, the data of application, connection to the db using ActiveRecord
+  - View => how the info is displayed, HTML (using ERB), XML, JSON
+  - Controller => the go between, connects the model and the view
   
   - Why MVC?
+    - flexibility, standardize communication
+    - modularizes our code -> make it easier to test
+    - make our depencies more flexible
 
 - *convention over configuration*
+  - by following convention, we can do more with less code
+  - we are buying into an opinion on writing our code
+  - write apps faster
+  - follow convention - but also when do break it
+
 - *RESTful Routing (REST)*
+  - REprensentational State Tranfser
+  - a convention for structuring our routes that will let us make CRUD apps
 
 ## Deliverables
 

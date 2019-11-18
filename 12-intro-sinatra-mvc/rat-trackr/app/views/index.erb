@@ -1,0 +1,9 @@
+<h1>Rats Index</h1>
+<ul>
+  <% @rats.each do |rat| %>
+    <li>
+      <%= rat.name %>
+      <%= rat.size %>
+    </li>
+  <% end %>
+</ul>
