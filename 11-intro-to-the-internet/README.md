@@ -4,14 +4,13 @@ Intro to the Internet
 ## First....
 * What will you get out of this Mod?
   * Developer -> Web Developer
+* Lecture ground rules
 
 ## Introduction to the Internet
 
 * What is the difference between the Internet and the Web?
-  * https://en.wikipedia.org/wiki/ARPANET
-  * https://en.wikipedia.org/wiki/Vint_Cerf (TCP)
-  * https://en.wikipedia.org/wiki/Tim_Berners-Lee (HTML/HTTP)
-  * http://info.cern.ch/hypertext/WWW/TheProject.html
+- Internet -> hardware, the infrastructre
+- Web -> software, the protocols for communication
 
 
 
@@ -28,10 +27,10 @@ Intro to the Internet
 
 
 * How is data sent over the internet?
-  * TCP
-  * IP
-  * HTTP
-  * HTML
+  * TCP -> Tranmission Control Protocol, how some information get sent over the wire
+  * IP -> Internet Protocol, IP Address, physical location, where
+  * HTTP -> HyperText Transfer Protocol
+  * HTML -> HyperText Markup Lanugage
 
 
 
@@ -62,8 +61,13 @@ Intro to the Internet
 
 
 * What is a server? What is a client?
+- any computer that can connect to other computers
+- anything that can make a request to a server
+  - browser, RestClient/HTTParty, 
 
 * What is the request / response cycle?
+- back and forth between client and server
+
 
 * With a client and server, which makes the request? Which sends the response?
 
@@ -84,14 +88,30 @@ Intro to the Internet
 * What is a HTTP request? Make a few, using at least two of these tools: Google Chrome, Postman, curl
 * What are the parts of a HTTP request
   * Use a web browser to find the headers for an HTTP request. What do you think these headers do?
+
+URL -> Uniform Resource Locater
+HTTP Verb + URL
+
   * What is usually in the body of an HTTP _response_?
   * What is a HTTP status code? What do the codes 200, 404, 500, 503, 302, 422 and 418 mean?
     * https://http.cat/
+
+
   * Why do we use HTTP verbs? What is the difference between what GET, POST, PUT, PATCH, and DELETE requests do?
 
+  CRUD
+  Create - POST
+  Read - GET
+  Update - PUT / PATCH
+  Delete - DELETE
 
 
+  * How can we change information in the request? 
+    * google seach -> query params
+    * espn.com -> routes/resources
 
+
+https://www.google.com/search?q=french+toast+recipe
 
 
 
@@ -99,6 +119,8 @@ Intro to the Internet
 
 
 * What's the difference between static and dynamic websites? What are some of the benefits of a dynamic website?
+- static: stays the same
+- dynamic: changes over time
 
 *************** 3 min break! ********************
 
