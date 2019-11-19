@@ -1,0 +1,10 @@
+<h1>Rats Index</h1>
+<ul>
+  <% @rats.each do |rat| %>
+    <li>
+      <a href="/rats/<%= rat.id %>">
+        <%= rat.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,18 @@
+<h1>Let's edit <%= @rat.name %></h1>
+
+<form method="post" action="/rats/<%= @rat.id %>">
+  <input type="hidden" name="_method" value="patch">
+  <label for="rat[name]">Rat Name</label>
+  <input type="text" name="rat[name]" value="<%= @rat.name %>">
+  <br>
+  <label for="rat[size]">Rat Size</label>
+  <input type="text" name="rat[size]" value="<%= @rat.size %>">
+  <br>
+  <label for="rat[weight]">Rat Weight</label>
+  <input type="number" name="rat[weight]" value="<%= @rat.weight %>">
+  <br>
+  <label for="rat[tail_length]">Rat Tail Length</label>
+  <input type="number" name="rat[tail_length]" value="<%= @rat.tail_length %>">
+  <br>
+  <input type="submit" value="Update">
+</form>
