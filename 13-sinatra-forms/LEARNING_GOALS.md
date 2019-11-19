@@ -7,3 +7,5 @@
 - Understand what information Sinatra uses to create the `params` hash
 - Get information from the `params` hash in a controller method
 - Understand the difference between rendering and redirecting, and when to use one strategy or the other
+- Configure forms to work with HTTP verbs other than GET and POST
+- Use nested params to isolate params coming from form fields
