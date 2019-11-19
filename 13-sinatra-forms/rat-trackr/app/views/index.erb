@@ -2,8 +2,9 @@
 <ul>
   <% @rats.each do |rat| %>
     <li>
-      <%= rat.name %>
-      <%= rat.size %>
+      <a href="/rats/<%= rat.id %>">
+        <%= rat.name %>
+      </a>
     </li>
   <% end %>
 </ul>

@@ -1,4 +1,5 @@
 Sinatra CRUD Part 1
+===
 
 ## SWBATs
 - Make a CRUD app using Sinatra
@@ -16,21 +17,19 @@ Sinatra CRUD Part 1
 - Part 1.2: work on the Create part of CRUD
   - Forms
   - Creating w/Mass Assigmnent
-- *If there's time*
-  - Search form!
 
 ## REST & CRUD
-- [ ] Create
-  - [ ] GET '/movies/new' -> Show the user a form to create a new movie
-  - [ ] POST '/movies' -> Create a new movie in our database
-- [ ] Read
-  - [ ] GET '/movies' -> Show all movies
-  - [ ] GET '/movies/:id' -> Show one movie
+- [x] Create
+  - [x] GET '/rats/new' -> Show the user a form to create a new rat
+  - [x] POST '/rats' -> Create a new rat in our database
+- [x] Read
+  - [x] GET '/rats' -> Show all rats
+  - [x] GET '/rats/:id' -> Show one rat
 - [ ] Update
-  - [ ] GET '/movies/:id/edit' -> Show the user a form to edit an existing movie movie
-  - [ ] PATCH '/movies/:id' -> Update the movie in our database
+  - [ ] GET '/rats/:id/edit' -> Show the user a form to edit an existing rat
+  - [ ] PATCH '/rats/:id' -> Update the rat in our database
 - [ ] Delete
-  - [ ] DELETE '/movies/:id' -> Delete the movie from our database
+  - [ ] DELETE '/rats/:id' -> Delete the rat from our database
 
 ### Static vs Dynamic Routes
 
