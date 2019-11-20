@@ -1,0 +1,8 @@
+<h1>Edit Sushi</h1>
+
+<form action="/sushis/<%= @sushi.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <input type="text" name="sushi[name]" value="<%= @sushi.name %>"><br />
+
+  <input type="submit" value="Edit Sushi!">
+</form>
