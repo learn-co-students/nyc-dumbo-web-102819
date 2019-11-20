@@ -1,0 +1,23 @@
+<h1>It's Mealtime</h1>
+
+<form method="post" action="/meals">
+  <label for="meal[name]">Name</label>
+  <input type="text" name="meal[name]">
+  <br>
+  <label for="meal[calories]">Calories</label>
+  <input type="number" name="meal[calories]">
+  <br>
+  <label for="meal[tasty]">Is it good tho?</label>
+  <input type="checkbox" name="meal[tasty]">
+  <br>
+  <label for="meal[rat_id]">Who ate it?</label>
+  <select name="meal[rat_id]">
+    <% @rats.each do |rat_instance| %>
+      <option value="<%= rat_instance.id %>">
+        <%= rat_instance.name %>
+      </option>
+    <% end %>
+  </select>
+  <br>
+  <input type="submit" value="Create A New meal">
+</form>

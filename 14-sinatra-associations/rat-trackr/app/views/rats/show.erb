@@ -1,0 +1,26 @@
+<h1><%= @rat.name %></h1>
+<img src="<%= @rat.image_url %>" alt="<%= @rat.name %>" style="max-width: 400px;">
+<p>
+  Size: <%= @rat.size %>
+</p>
+<p>
+  Weight: <%= @rat.weight %>
+</p>
+<p>
+  Tail Length: <%= @rat.tail_length %>
+</p>
+
+<a href="/rats/<%= @rat.id %>/edit">Edit</a>
+<form method="post" action="/rats/<%= @rat.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete this rat from the face of the Earth">
+</form>
+
+<h1>Meals</h1>
+<ul>
+  <% @rat.meals.each do |meal| %>
+    <li>
+      <%= meal.name %>
+    </li>
+  <% end %>
+</ul>
