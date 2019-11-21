@@ -1,0 +1,15 @@
+<h1>Rats Index</h1>
+<ul>
+  <% @rats.each do |rat| %>
+    <li>
+      <a href="/rats/<%= rat.id %>">
+        <%= rat.name %>
+      </a>
+      <a href="<%= rat_path(rat.id) %>">
+        <%= rat.name %>
+      </a>
+      <%= link_to rat.name, rat_path(rat.id) %>
+      <%= link_to("hi", "/somewhere") %>
+    </li>
+  <% end %>
+</ul>
