@@ -1,0 +1,11 @@
+<h1>Dumbo Dictionary</h1>
+
+<% @words.each do |word| %>
+  <h3><%= link_to word.name, "/words/#{word.id}" %></h3>
+  <h3><%= link_to word.name, word_path(word.id) %></h3>
+  <h3><%= link_to word.name, word_path(word) %></h3>
+  <h3><%= link_to word.name, word %></h3>
+  <em><%= word.author %></em>
+  <hr>
+<% end %>
+

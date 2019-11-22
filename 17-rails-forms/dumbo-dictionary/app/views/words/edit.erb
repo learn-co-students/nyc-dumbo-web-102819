@@ -1,0 +1,17 @@
+<h1>Edit Word pls</h1>
+
+<%= form_for @word do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "name" %>
+  <br>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <br>
+  <%= f.label :likes %>
+  <%= f.number_field :likes %>
+  <br>
+  <%= f.submit %>
+<% end %>

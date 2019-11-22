@@ -8,11 +8,10 @@ Rails Forms
 - Use strong params to allow creating/updating models with mass assignment
 
 ## Outline
-- [ ] Create our model using `rails g model`
-- [ ] Work on CRUD, focus on routes and ActionView helpers
-  - [ ] Read
-    - [ ] Review `link_to` and path helpers
-    - [ ] Refactor routes to use `resources`
+- [x] Create our model using `rails g model`
+- [x] Work on CRUD, focus on routes and ActionView helpers
+  - [x] Read
+    - [x] Review `link_to` and path helpers
   - [ ] Create
     - [ ] HTML form vs `form_tag` vs `form_for`
     - [ ] Strong Params
@@ -20,10 +19,19 @@ Rails Forms
     - [ ] reusable `form_for`
   - [ ] Delete
     - `button_to`
+- [ ] Refactor routes to use `resources`
 
 If there's time:
 - [ ] Refactor controller using `before_action`
 - [ ] Refactor forms to use a partial view
+
+Word -< Definitions
+Word
+name
+author
+category
+likes
+
 
 ### Helpful Bookmarks
 
