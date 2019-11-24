@@ -1,0 +1,9 @@
+<% @words.each do |word| %>
+  <div class="card">
+    <h3 class="word">
+      <%= link_to word.name, word %>
+    </h3>
+    <em>Submitted by <%= word.author %></em>
+  </div>
+<% end %>
+

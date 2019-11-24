@@ -1,0 +1,15 @@
+<div class="card">
+  <h3 class="word">
+    <%= @word.name %>
+  </h3>
+  <em>Submitted by <%= @word.author %></em>
+  <p>
+    Likes: <%= "👍" * @word.likes %>
+  </p>
+  <p>
+    <%= @word.category %>
+  </p>
+  <p>
+    <%= link_to 'Edit', edit_word_path(@word) %>
+  </p>
+</div>
