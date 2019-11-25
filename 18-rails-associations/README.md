@@ -7,12 +7,17 @@ Rails Associations
 - Render a dropdown `<select>` tag in a form using the `collection_select` helper
 - Handle deleting an instance of a model that has other records associated using `dependent: :destroy`
 
+Notes
+- getting used to Rails magic, knowing what spell to cast
+- debugging: harder since it's less explicit
+
 ## Outline
-- [ ] Add an additional model to our domain
-  - [ ] Create relationship using ActiveRecord
-  - [ ] Use information from the association in our views
-  - [ ] Make a create form for the new model with a dropdown
-  - [ ] Update our delete method from the first model
+- [x] Finish CRUD (delete)
+- [x] Add an additional model to our domain
+  - [x] Create relationship using ActiveRecord
+  - [x] Use information from the association in our views (show the definitions for a word)
+  - [x] Make a create form for the new model with a dropdown
+  - [x] Update our delete method from the first model
 
 ### ActiveRecord Associations Review
 

@@ -4,12 +4,19 @@
   </h3>
   <em>Submitted by <%= @word.author %></em>
   <p>
-    Likes: <%= "👍" * @word.likes %>
-  </p>
-  <p>
     <%= @word.category %>
   </p>
   <p>
     <%= link_to 'Edit', edit_word_path(@word) %>
+    <%= button_to "Delete That Word", word_path(@word), method: :delete %>
   </p>
 </div>
+
+<% @word.definitions.each do |definition| %>
+  <div class="card">
+    <%= definition.body %>
+    <p>
+      Likes: <%= "👍" * definition.likes %>
+    </p>
+  </div>
+<% end %>

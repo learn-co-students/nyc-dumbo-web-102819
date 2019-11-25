@@ -44,6 +44,13 @@ class WordsController < ApplicationController
     redirect_to word
   end
 
+  def destroy
+    word = Word.find(params[:id])
+    word.destroy
+
+    redirect_to "/words"
+  end
+
   private
 
   def word_params

@@ -14,21 +14,21 @@ Word.create(
   name: "Rails",
   author: "Ian",
   category: "Mod 2",
-  likes: 0
+  likes: 1
 )
 
 Word.create(
   name: "Green Check Syndrome",
   author: "Griffin",
   category: "All of Flatiron",
-  likes: 0
+  likes: 5
 )
 
 Word.create(
   name: "WeWork Metal Cups",
   author: "Samir",
   category: "After Hours",
-  likes: 0
+  likes: 16
 )
 
 puts "Done!"

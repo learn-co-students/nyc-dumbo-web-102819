@@ -1,0 +1,17 @@
+<div class="card">
+  <%= form_for @definition, html: { class: "form" } do |f| %>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+    <br>
+    <%= f.label :part_of_speech %>
+    <%= f.text_field :part_of_speech %>
+    <br>
+    <%= f.label :likes %>
+    <%= f.number_field :likes %>
+    <br>
+    <%= f.label :word_id %>
+    <%= f.collection_select :word_id, Word.all, :id, :name %>
+    <br>
+    <%= f.submit "Make Me A Word" %>
+  <% end %>
+</div>

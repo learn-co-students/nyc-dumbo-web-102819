@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_161428) do
+ActiveRecord::Schema.define(version: 2019_11_25_194705) do
+
+  create_table "definitions", force: :cascade do |t|
+    t.string "body"
+    t.string "part_of_speech"
+    t.integer "likes"
+    t.integer "word_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["word_id"], name: "index_definitions_on_word_id"
+  end
 
   create_table "words", force: :cascade do |t|
     t.string "name"
@@ -21,4 +31,5 @@ ActiveRecord::Schema.define(version: 2019_11_22_161428) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "definitions", "words"
 end
