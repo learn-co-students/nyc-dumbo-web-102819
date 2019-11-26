@@ -24,11 +24,25 @@ Word.create(
   likes: 5
 )
 
-Word.create(
+cups = Word.create(
   name: "WeWork Metal Cups",
   author: "Samir",
   category: "After Hours",
   likes: 16
+)
+
+Definition.create(
+  body: "A nice, sturdy cup to drink out of",
+  part_of_speech: "noun",
+  likes: 10,
+  word: cups
+)
+
+Definition.create(
+  body: "An after-hours flask",
+  part_of_speech: "noun",
+  likes: 100,
+  word: cups
 )
 
 puts "Done!"

@@ -14,6 +14,7 @@ class WordsController < ApplicationController
   # get /words/:id
   def show
     @word = Word.find(params[:id])
+    @definitions = @word.definitions.order(likes: :desc)
   end
 
   # get /words/new

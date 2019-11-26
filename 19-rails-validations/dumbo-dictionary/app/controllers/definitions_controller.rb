@@ -11,6 +11,22 @@ class DefinitionsController < ApplicationController
     redirect_to word_path(definition.word)
   end
 
+  def upvote
+    definition = Definition.find(params[:id])
+    definition.likes += 1
+    definition.save
+
+    redirect_to word_path(definition.word)
+  end
+
+  def downvote
+    definition = Definition.find(params[:id])
+    definition.likes -= 1
+    definition.save
+
+    redirect_to word_path(definition.word)
+  end
+
   private
 
   def definition_params

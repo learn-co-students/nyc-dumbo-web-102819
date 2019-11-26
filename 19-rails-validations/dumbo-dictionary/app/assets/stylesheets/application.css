@@ -156,6 +156,31 @@ input[type=submit] {
   box-shadow: 0 2px 0 black;
 }
 
+.like-buttons {
+  display: flex;
+}
+
+
+input[type=submit].like-button {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+}
+
+.like-buttons form:first-child .like-button {
+  border-radius: 20% 0 0 20%;
+}
+
+.like-buttons form:last-child .like-button {
+  border-radius: 0 20% 20% 0;
+}
+
+input[type=submit].like-button:active {
+  display: inline-block;
+  box-shadow: none;
+}
+
 /* layout */
 .main {
   margin: 2rem 1rem;
