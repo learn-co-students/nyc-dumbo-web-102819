@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DumboDictionary</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="container">
+        <nav>
+          <%= link_to "Words", words_path, class: "item" %>
+          <%= link_to "New Word", new_word_path, class: "item" %>
+        </nav>
+        <%= form_tag "/words", method: "get", class: "search item" do %>
+          <%= text_field_tag :term, "", placeholder: "Search for a word..." %>
+        <% end %>
+        <nav class="right">
+          <span class="item">
+            Welcome, user!
+          </span>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
