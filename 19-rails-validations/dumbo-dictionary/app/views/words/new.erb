@@ -1,17 +1,16 @@
 <div class="card">
-  <%= form_for @word, html: { class: "form" } do |f| %>
-    <%= f.label :name, "Word" %>
-    <%= f.text_field :name, placeholder: "What's the word?" %>
-    <br>
-    <%= f.label :author %>
-    <%= f.text_field :author, placeholder: "Who's making this?" %>
-    <br>
-    <%= f.label :category %>
-    <%= f.text_field :category, placeholder: "What's the category?" %>
-    <br>
-    <%= f.label :likes %>
-    <%= f.number_field :likes %>
-    <br>
-    <%= f.submit "Make Me A Word" %>
+  <h3>
+    <% if flash[:some_key] %>
+      <%= flash[:some_key] %>
+    <% end %>
+  </h3>
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+      <p>
+        <%= error %>
+      </p>
+    <% end %>
   <% end %>
+
+  <%= render "form" %>
 </div>

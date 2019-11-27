@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_25_194705) do
+ActiveRecord::Schema.define(version: 2019_11_26_195117) do
 
   create_table "definitions", force: :cascade do |t|
     t.string "body"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_11_25_194705) do
     t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "origin"
   end
 
   add_foreign_key "definitions", "words"

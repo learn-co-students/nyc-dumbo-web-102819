@@ -1,4 +1,6 @@
 class WordsController < ApplicationController
+  before_action :set_word, only: [:show, :edit, :update, :destroy]
+  # before_action :does_something_else, only: :edit
 
   # get /words
   def index
@@ -13,7 +15,7 @@ class WordsController < ApplicationController
 
   # get /words/:id
   def show
-    @word = Word.find(params[:id])
+    # set_word
     @definitions = @word.definitions.order(likes: :desc)
   end
 
@@ -27,32 +29,43 @@ class WordsController < ApplicationController
     # model
     word = Word.create(word_params)
 
-    # response
-    # redirect_to "/words/#{word.id}" <- option 1
-    # redirect_to word_path(word.id) <- option 2
-    # redirect_to word_path(word) <- option 3
-    redirect_to word # <- option 4
+    if word.valid?
+      redirect_to word
+    else
+      # if the word isn't valid, give them another shot -> show them the form again
+      flash[:some_key] = "whatever value"
+      flash[:errors] = word.errors.full_messages
+      redirect_to "/words/new" #new_word_path
+    end
   end
 
   def edit
-    @word = Word.find(params[:id])
+    # set_word
   end
 
   def update
-    word = Word.find(params[:id])
-    word.update(word_params)
+    # set_word
+    @word.update(word_params)
 
-    redirect_to word
+    redirect_to @word
   end
 
   def destroy
-    word = Word.find(params[:id])
-    word.destroy
+    # set_word
+    @word.destroy
 
     redirect_to "/words"
   end
 
   private
+
+  def set_word
+    @word = Word.find(params[:id])
+  end
+
+  def does_something_else
+    redirect_to "/somewhere"
+  end
 
   def word_params
     params.require(:word).permit(:name, :author, :category, :likes)
