@@ -1,0 +1,12 @@
+<% if flash[:message] %>
+  <h3>Added <%= flash[:message] %> to cart!</h3>
+<% end %>
+
+<h4>Your Cart: </h4>
+<ol>
+  <% session[:cart].each do |item| %>
+    <li><%= Nacho.find(item).name %></li>
+  <% end %>
+</ol>
+
+<hr>

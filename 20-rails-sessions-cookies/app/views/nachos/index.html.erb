@@ -1,0 +1,29 @@
+<h1>Menu</h1>
+
+
+
+<h4>Your Cart: </h4>
+<ol>
+  <% if @cart_items %>
+
+    <% @cart_items.each do |nacho| %>
+    <li> <%= nacho.name %></li>
+    <% end %>
+  <% end  %>
+</ol>
+
+<hr>
+
+
+<% @nachos.map do |nacho| %>
+  <ul>
+    <li>
+      <%= link_to nacho.name, nacho %>
+      $<%= nacho.price %>
+      <%=
+        button_to "Add To Cart 🤔", "/cart", method: :patch,
+        params: { nacho_id: nacho.id }
+      %>
+    </li>
+  </ul>
+<% end %>
