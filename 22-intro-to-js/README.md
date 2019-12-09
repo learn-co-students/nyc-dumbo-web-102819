@@ -8,7 +8,20 @@
   * Week 3 - Project week & shiny new JS
 
   * Three essential pillars of front-end web programming
+
+    HTML - HyperText Markup Language (Content and the structure of the page)
+    CSS - Cascading Style Sheet (Aesthetics as well as accessibility)
+    JS - JavaScript (Add functionality/interactivity)
+
     * Three essential pillars of JS
+
+    - Event Listening: When something happens
+    - DOM Manipulation: Changing the contents of the page (WITHOUT a page refresh)
+    - Communication with the server: Getting/sending information to the server (WITHOUT a page refresh)
+
+    When X happens,
+    We do Y Fetch
+    and slap Z on the DOM.
 
 # Cool sites
 
