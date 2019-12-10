@@ -21,7 +21,7 @@ newEmojiForm.addEventListener("submit", function(evt){
   newLi.innerText = newEmoji
   emojisUl.append(newLi)
 
-  evt.target.reset()
+  // evt.target.reset()
 })
 
 
