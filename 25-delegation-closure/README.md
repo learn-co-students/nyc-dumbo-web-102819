@@ -6,7 +6,8 @@
 * How do I make some code run when an event occurs in my DOM?
 * How can I listen for events on a DOM node / HTML element?
 * What calls the callback that I pass to addEventListener? What gets passed into that callback?
-* What will happen if I += the innerHTML of an element with children that have event handlers?
+* What will happen if I += the innerHTML of an element
+with children that have event handlers?
 * What is event.preventDefault() and why is it useful?
 
 # Bonus (ok if we don't get to these just yet)    
