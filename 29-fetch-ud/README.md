@@ -24,7 +24,24 @@
 
 ## Update
 
+1. When we click on input
+2. Make PATCH '/to_do_items/:id' (Update) fetch happen
+3. Slap changes to the DOM!
+
 ## Delete
+
+1. When we click on the x Button happens
+2. Make DELETE '/to_do_items/:id' (Destroy) fetch happen
+3. Slap the LI off the DOM!
+
+
+
+
+
+
+
+
+
 
 
 
