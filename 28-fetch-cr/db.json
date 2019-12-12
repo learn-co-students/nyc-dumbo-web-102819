@@ -14,6 +14,21 @@
       "id": 3,
       "title": "Eat Laugh Love",
       "done": false
+    },
+    {
+      "title": "Learn JS",
+      "done": false,
+      "id": 4
+    },
+    {
+      "title": "Eat Lunch",
+      "done": false,
+      "id": 5
+    },
+    {
+      "title": "Read/create information",
+      "done": false,
+      "id": 6
     }
   ],
   "snacks": [
@@ -24,7 +39,7 @@
     },
     {
       "id": 2,
-      "name": "Nutella",
+      "name": "Peanut Butter",
       "yumminess": 10
     },
     {

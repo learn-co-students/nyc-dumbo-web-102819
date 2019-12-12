@@ -8,9 +8,19 @@
 2. Make Y fetch happen
 3. Slap Z on the DOM!
 
+
 ## Read
 
+1. When the contents of the DOM loads event happens
+2. Make GET '/to_do_items' (Index) fetch happen
+3. Slap forEACH of the to_do_items on the DOM!
+
 ## Create
+
+1. When the submit event happens
+2. Make POST '/to_do_items' (CREATE) fetch happen
+3. Slap the newly created toDoItemObj on the DOM!
+
 
 ## Update
 
