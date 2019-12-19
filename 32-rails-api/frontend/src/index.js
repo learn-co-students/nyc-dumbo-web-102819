@@ -9,6 +9,7 @@ fetch("http://localhost:3000/toys")
 .then(res => res.json())
 .then((allToys) => {
   allToys.forEach((toy) => {
+    console.log(toy);
     toyCollectionDiv.innerHTML += toyCard(toy)
   })
 })
@@ -43,7 +44,8 @@ toyCollectionDiv.addEventListener("click", (event) => {
       method: "DELETE"
     })
     .then(res => res.json())
-    .then(() => {
+    .then((response) => {
+      console.log(response);
       event.target.parentElement.remove()
     })
   }
@@ -90,8 +92,13 @@ toyForm.addEventListener("submit", (event) => {
     }
   })
   .then(res => res.json())
-  .then(toyObject => {
-    toyCollectionDiv.innerHTML += toyCard(toyObject)
+  .then(response => {
+    if (response.id) {
+      toyCollectionDiv.innerHTML += toyCard(response)
+    } else {
+      alert(response.errors[0])
+    }
+
   })
 
 
