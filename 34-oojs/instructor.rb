@@ -5,6 +5,8 @@ class Instructor
   attr_reader :name, :fullName
 
   def initialize(name, fullName)
+    # self inside of an initialize is the instance
+    # @@all << self
     @name = name
     @fullName = fullName
   end
