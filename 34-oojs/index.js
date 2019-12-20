@@ -62,34 +62,6 @@ let jackObject = new Instructor("Jack", "J-Roxx")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function globalIntroduction(){
   // console.log("hello");
   return `Yo, I'm ${this.djName}.`
@@ -126,25 +98,3 @@ let eric = {
 // console.log(eric.introduce() === jack.introduce())
 
 // console.log(eric.introduce === jack.introduce)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
