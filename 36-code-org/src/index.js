@@ -12,3 +12,23 @@ addBtn.addEventListener('click', () => {
     toyFormContainer.style.display = 'none'
   }
 })
+
+
+
+Adaptor.getAllBoxes()
+.then(arrayOfBoxes => {
+  arrayOfBoxes.forEach(box => {
+    new JSBox(box)
+  })
+  JSBox.all[0].handleClick()
+})
+
+
+// NICE THINGS TO KNOW
+// 1) React Components define the structure/event listeners (instances of a class)
+// 2) Event Listeners in React must be arrow functions for binding purposes
+// 3) React Components look a lot like innerHTML
+// 4) Callbacks - they exist and must be known
+// 5) Array manipulations (filter, map, sort, find)
+
+// 6) Adaptors return promises that we can .then chain
