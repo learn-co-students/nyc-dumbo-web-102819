@@ -37,6 +37,7 @@ class Message extends React.Component {
 
   render(){
     let {content} = this.props
+    console.log("Message was rendered with content: " + content)
     return (<li>
       <span>{ content }</span>
 
