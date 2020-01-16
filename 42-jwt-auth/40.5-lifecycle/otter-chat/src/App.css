@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+.Sidebar {
+  background: navy;
+  color: white;
+  display: none;
+}
+.MessageContainer {
+
+}
+.Sidebar, .MessageContainer {
+  padding: 20px;
+}
+button {
+  margin: 0 3px;
+}
+li {
+  margin: 3px 0px;
+}
+.showing {
+  display: block;
+}
+/*.MessageList {
+  max-height: calc(100vh - 500px);
+  overflow: auto;
+  border: 1px solid gray;
+}*/
+input[type="number"] {
+  width: 40px;
+}
